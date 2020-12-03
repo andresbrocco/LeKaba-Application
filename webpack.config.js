@@ -11,25 +11,34 @@ const config = {
 	},
 	devtool: "inline-source-map",
 	module: {
-			rules: [
-					{ 
-							test: /\.tsx?$/,
-							exclude: /node_modules/,
-							use: 'babel-loader'
-					},
-					{
-							test: /\.css$/,
-							use: ["style-loader", "css-loader"]
-					}
-			]
+		rules: [
+			{ 
+				test: /\.tsx?$/,
+				exclude: /node_modules/,
+				use: 'babel-loader'
+			},
+			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"]
+			},
+			{
+				test: /\.csv$/,
+				loader: 'csv-loader',
+				options: {
+					dynamicTyping: true,
+					header: true,
+					skipEmptyLines: true
+				}
+			}
+		]
 	},
 	resolve: {
 		extensions: ['*', '.ts', '.tsx', '.js', '.jsx']
 	},
 	output: {
-			path: path.resolve(__dirname, 'dist'),
-			publicPath: '/',
-			filename: 'bundle.js'
+		path: path.resolve(__dirname, 'dist'),
+		publicPath: '/',
+		filename: 'bundle.js'
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
