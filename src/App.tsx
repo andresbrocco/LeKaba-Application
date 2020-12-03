@@ -12,7 +12,7 @@ function App() {
 				<h2>On ne se preoccupe pas du header</h2>
 			</header>
 			<section className="Body">
-				<Grid />
+				<Grid places={csvData}/>
 				<MyMap />
 			</section>
 		</div>
