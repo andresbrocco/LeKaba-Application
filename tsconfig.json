@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"lib": ["ES6", "DOM"],
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"sourceMap": true,
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"target":"ES6",
+		"jsx": "react",
+		"moduleResolution": "Node",
+		"strict": true,
+		"noEmit": true,
+		"allowJs": true,
+		"isolatedModules": true
+	},
+	"include": ["src"]
+}
