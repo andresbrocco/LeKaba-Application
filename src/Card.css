@@ -13,3 +13,8 @@
 .Card p {
 	margin: 0.5em;
 }
+
+.CarouselImage {
+	width: 100%;
+	height: 8em;
+}
