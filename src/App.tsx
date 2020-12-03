@@ -1,10 +1,22 @@
 import React from 'react';
 import './App.css';
+import csvData from './exercice_lekaba.csv'; // I am using this library to import csv as a json file: https://github.com/theplatapi/csv-loader
+import Grid from './Grid';
+import MyMap from './MyMap';
 
-const App = () => (
-	<div className="App" >
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio debitis odit, qui similique, nulla repudiandae, labore voluptas corporis tempore animi architecto reiciendis facilis possimus minus. Maxime quos et veritatis deleniti!</p>
-	</div>
-);
+function App() {
+	console.log("Loaded csvfile:", csvData);
+	return (
+		<div className="App" >
+			<header>
+				<h2>On ne se preoccupe pas du header</h2>
+			</header>
+			<section className="Body">
+				<Grid />
+				<MyMap />
+			</section>
+		</div>
+	);
+};
 
 export default App;

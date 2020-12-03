@@ -1,0 +1,15 @@
+.Card {
+	width: 20em;
+	height: 20em;
+	background-color: white;
+	margin: 1em;
+	border-radius: 0.5em;
+}
+
+.Card h4 {
+	margin: 0.5em;
+}
+
+.Card p {
+	margin: 0.5em;
+}

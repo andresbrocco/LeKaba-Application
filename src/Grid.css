@@ -1,0 +1,11 @@
+.Grid {
+	background-color: blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	/* align-content: space-evenly; */
+	width: 50%;
+	height: 90vh;
+	overflow: auto;
+}
