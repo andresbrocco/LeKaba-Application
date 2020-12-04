@@ -13,7 +13,7 @@ function App() {
 			</header>
 			<section className="Body">
 				<Grid places={csvData}/>
-				<MyMap />
+				<MyMap places={csvData}/>
 			</section>
 		</div>
 	);
