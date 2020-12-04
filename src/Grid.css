@@ -1,5 +1,4 @@
 .Grid {
-	background-color: blue;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -8,4 +7,5 @@
 	width: 50%;
 	height: 90vh;
 	overflow: auto;
+	background-color: rgba(30, 100, 150, 0.3);
 }

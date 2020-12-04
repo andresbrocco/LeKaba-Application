@@ -4,6 +4,9 @@
 	background-color: white;
 	margin: 1em;
 	border-radius: 0.5em;
+	background-color: rgba(30, 100, 150, 0.5);
+	-webkit-box-shadow: 7px 7px 3px 0px rgba(30, 100, 150, 0.5);
+	box-shadow: 7px 7px 3px 0px rgba(20, 80, 100, 0.5);
 }
 
 .Card h4 {

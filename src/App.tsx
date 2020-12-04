@@ -5,7 +5,6 @@ import Grid from './Grid';
 import MyMap from './MyMap';
 
 function App() {
-	console.log("Loaded csvfile:", csvData);
 	return (
 		<div className="App" >
 			<header>
